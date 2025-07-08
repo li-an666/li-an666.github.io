@@ -8,30 +8,68 @@
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 30px;
             color: #333;
         }
         header {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
         .profile-img {
-            width: 150px;
-            height: 150px;
+            width: 160px;
+            height: 160px;
             border-radius: 50%;
             object-fit: cover;
             border: 3px solid #2c3e50;
+            margin-bottom: 20px;
         }
         h1 {
             color: #2c3e50;
+            margin-bottom: 10px;
         }
-        .contact {
+        h2 {
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            color: #2c3e50;
+        }
+        .contact-info {
             background-color: #f8f9fa;
             padding: 15px;
             border-radius: 5px;
             margin: 20px 0;
+        }
+        .publication {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 3px solid #eaeaea;
+        }
+        .publication-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .publication-authors {
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+        .publication-journal {
+            color: #555;
+        }
+        .publication-doi {
+            margin-top: 5px;
+        }
+        .publication-doi a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .publication-doi a:hover {
+            text-decoration: underline;
+        }
+        .impact-factor {
+            color: #27ae60;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -39,14 +77,40 @@
     <header>
         <img src="jiazq.jpg" alt="Zhiqiang Jia's Profile Photo" class="profile-img">
         <h1>Zhiqiang Jia</h1>
+        <p>Researcher in AI for Science</p>
     </header>
 
     <section>
-        <h2>About Me</h2>
-        <div class="contact">
+        <h2>Contact</h2>
+        <div class="contact-info">
             <p><strong>Email:</strong> zhiqiangjia@cuhk.edu.hk</p>
         </div>
-        <p><strong>Research Focus:</strong> AI for Science</p>
+    </section>
+
+    <section>
+        <h2>Research Focus</h2>
+        <p>AI for Science</p>
+    </section>
+
+    <section>
+        <h2>Journal Publications</h2>
+        <div class="publication">
+            <div class="publication-title">Artificial intelligence-enabled multipurpose smart detection in active-matrix electrowetting-on-dielectric digital microfluidics</div>
+            <div class="publication-authors">Jia Z, et al.</div>
+            <div class="publication-journal">Microsystems & Nanoengineering <span class="impact-factor">(IF = 9.9)</span></div>
+            <div class="publication-doi">
+                DOI: <a href="https://doi.org/10.1038/s41378-024-00765-7" target="_blank">10.1038/s41378-024-00765-7</a>
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="publication-title">Intelligent single-cell manipulation: LLMs- and object detection-enhanced active-matrix digital microfluidics</div>
+            <div class="publication-authors">Jia Z, et al.</div>
+            <div class="publication-journal">Microsystems & Nanoengineering <span class="impact-factor">(IF = 9.9)</span></div>
+            <div class="publication-doi">
+                DOI: <a href="https://doi.org/10.1038/s41378-025-00962-y" target="_blank">10.1038/s41378-025-00962-y</a>
+            </div>
+        </div>
     </section>
 </body>
 </html>
